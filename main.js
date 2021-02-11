@@ -1,6 +1,9 @@
-first=new Date('1/1/2020');
-today=new Date();
+let first=new Date('1/1/' + (new Date().getFullYear()));
+let today=new Date();
 
-diff= today - first;
+let diff= today - first;
 
-days = diff / 1000*60*60*24;
+let days = diff / 1000*60*60*24;
+
+let daysEl = document.getElementsByTagName("div");
+daysEl.innerHTML = days;
