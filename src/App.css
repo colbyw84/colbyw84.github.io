@@ -1,3 +1,33 @@
 .App {
   text-align: center;
 }
+
+.App .container {
+  width: 500px;
+  height: 500px;
+  background-color: rgb(110, 0, 120);
+  border-radius: 6px;
+  margin: auto;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.App .item-container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+.App .value {
+  color: white;
+  font-size: 20px;
+}
+.App .title {
+  color: white;
+  font-size: 34px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}

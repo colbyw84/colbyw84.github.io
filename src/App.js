@@ -16,7 +16,7 @@ class App extends Component {
 
     let diff= today - first;
 
-    let days = diff / (1000*60*60*24);
+    let days = Math.round(diff / (1000*60*60*24));
 
     let total = 0;
 
@@ -27,8 +27,16 @@ class App extends Component {
 
     return (
       <div className="App">
-        <div className="days-container">{days}</div>
-        <div className="total-container">{total}</div>
+        <div className="container">
+          <div className="item-container">
+            <div className="title">Todays Number</div>
+            <div className="value">{days}</div>
+          </div>
+          <div className="item-container">
+            <div className="title">Total Completed</div>
+            <div className="value">{total}</div>
+          </div>
+        </div>
       </div>
     );
   }
