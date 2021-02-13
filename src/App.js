@@ -44,7 +44,7 @@ class App extends Component {
 
     let diff= today - first;
 
-    let days = Math.round(diff / (1000*60*60*24));
+    let days = Math.ceil(diff / (1000*60*60*24));
 
     let total = 0;
 
