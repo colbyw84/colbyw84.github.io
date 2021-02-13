@@ -12,9 +12,17 @@
   flex-direction: column;
 }
 
+.App .total-container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+}
+
 .App .item-container {
   padding-top: 10px;
   padding-bottom: 10px;
+  width: 100%;
 }
 
 .App .todays-count-container {
@@ -22,6 +30,18 @@
   border: 2px solid white;
   border-radius: 6px;
   width: 98%;
+}
+
+.App .type-title {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: -50px;
+}
+
+.App .control-title {
+  width: 100%;
+  padding-top: 20px;
 }
 
 .App .change-value {
@@ -43,12 +63,30 @@
 }
 
 .App .todays-count {
-  border-right: 2px solid white;
+  position: relative;
   line-height: 48px;
-  width: 60%;
   padding: 10px;
   font-weight: bold;
   cursor: pointer;
+  width: 40%;
+  padding-top: 40%;
+  margin: auto;
+  height: 0;
+}
+
+.App .todays-count-div {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255,.9);
+  color: rgb(34, 34, 34);
+  font-size: 40px;
 }
 
 .App .change-value:last-child {
