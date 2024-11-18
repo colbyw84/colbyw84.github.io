@@ -2,6 +2,7 @@
 import React, {Component} from 'react';
 import './App.css';
 import DailyCounter from './components/daily-counter/daily-counter';
+import DailyTasks from './components/daily-tasks/daily-tasks';
 import NewYearChallenge from './components/new-year-challenge/new-year-challenge';
 import { Routes, Route, Link } from "react-router-dom";
 
@@ -16,6 +17,10 @@ class App extends Component {
     console.log(response);
   }
 
+  getTab() {
+    return 
+  }
+
   render() {
 
     return (
@@ -23,6 +28,7 @@ class App extends Component {
         <div  className="container">
           <Routes>
             <Route path="workout" element={<NewYearChallenge />} />
+            <Route path="daily-tasks" element={<DailyTasks />} />
             <Route path="*" element={<DailyCounter />} />
           </Routes>
         </div>
