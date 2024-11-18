@@ -27,8 +27,9 @@ class App extends Component {
       <div className="App">
         <div  className="container">
           <Routes>
-            <Route path="workout" element={<NewYearChallenge />} />
-            <Route path="daily-tasks" element={<DailyTasks />} />
+            <Route path="?page=workout" element={<NewYearChallenge />} />
+            <Route path="?page=daily-tasks" element={<DailyTasks />} />
+            <Route path="?page=daily-counter" element={<DailyCounter />} />
             <Route path="*" element={<DailyTasks />} />
           </Routes>
         </div>
