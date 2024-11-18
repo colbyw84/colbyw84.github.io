@@ -29,7 +29,7 @@ class App extends Component {
           <Routes>
             <Route path="workout" element={<NewYearChallenge />} />
             <Route path="daily-tasks" element={<DailyTasks />} />
-            <Route path="*" element={<DailyCounter />} />
+            <Route path="*" element={<DailyTasks />} />
           </Routes>
         </div>
       </div>
