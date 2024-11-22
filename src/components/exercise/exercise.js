@@ -6,19 +6,18 @@ import Timer from '../timer/timer';
 const Exercise = (props) => 
 {
     const [complete, setComplete] = useState(false);
-    const [reps, setReps] = useState(10);
-    const [count, setCount] = useState();
+    // const [reps, setReps] = useState(10);
+    // const [count, setCount] = useState();
 
     useEffect(() => {
 
     }, []);
 
     
-
-    let changeValue = (type, number) =>
-    {
-        
-    };
+    // let changeValue = (type, number) =>
+    // {
+    //     
+    // };
 
     let onComplete = () =>
     {

@@ -26,7 +26,7 @@ const Timer = (props) => {
       clearInterval(interval);
     }
     return () => clearInterval(interval);
-  }, [isActive, seconds]);
+  }, [props.active, isActive, seconds]);
 
   return (
     <div className="item-container">

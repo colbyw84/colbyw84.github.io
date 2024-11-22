@@ -4,10 +4,10 @@ import Exercise from '../exercise/exercise';
 const NewYearChallenge = (props) => 
 {
     const [todayStr, setTodayStr] = useState();
-    const [pushupCount, setPushupCount] = useState();
-    const [otherCount, setOtherCount] = useState();
-    const [todaysGoal, setTodaysGoal] = useState();
-    const [todaysTotal, setTodaysTotal] = useState();
+    //const [pushupCount, setPushupCount] = useState();
+    //const [otherCount, setOtherCount] = useState();
+    //const [todaysGoal, setTodaysGoal] = useState();
+    //const [todaysTotal, setTodaysTotal] = useState();
 
     useEffect(() => {
 
@@ -15,7 +15,7 @@ const NewYearChallenge = (props) =>
         let todayStrLocal = "" + today.getFullYear() + today.getMonth() + today.getDate();
         setTodayStr(todayStrLocal);
 
-    }, [setTodayStr, setPushupCount, setOtherCount, setTodaysGoal, setTodaysTotal]);
+    }, [setTodayStr]); //setPushupCount, setOtherCount, setTodaysGoal, setTodaysTotal
 
     return (
         <div className="container">
